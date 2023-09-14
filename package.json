@@ -1,0 +1,52 @@
+{
+  "name": "sendmethisvideo",
+  "version": "2.0.1",
+  "description": "SendMeThisVideo repo",
+  "main": "src/index.js",
+  "bin": "src/index.js",
+  "engines": {
+    "node": "14.x"
+  },
+  "scripts": {
+    "start_old": "node src/webhook.js",
+    "start_for": "node src/fork.js",
+    "start": "node src/all.js",
+    "upload": "node src/upload.js",
+    "background": "node src/index.js",
+    "stream": "node src/streaming.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test-script": "node test/index.js",
+    "test-twt": "node test/twitter.js",
+    "test-get-vid": "node test/get_vid.js",
+    "test-telegram": "node src/telegram.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ https://gitlab.com/Cintrust/sendmethisvideo.git"
+  },
+  "keywords": [
+    "SendMeThisVideo"
+  ],
+  "author": "Cintrust De Senior & Kelechi Emmanuel",
+  "license": "ISC",
+  "homepage": "https://www.sendmethisvideo.com",
+  "bugs": {
+    "url": "https://gitlab.com/Cintrust/sendmethisvideo.git/issues"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "debug": "^4.1.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mime": "^2.5.0",
+    "mysql": "^2.18.1",
+    "node-telegram-bot-api": "^0.51.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.6",
+    "twit": "^2.2.11"
+  },
+  "devDependencies": {
+    "faker": "^4.1.0"
+  }
+}

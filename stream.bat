@@ -1,0 +1,2 @@
+npm stream
+pause
